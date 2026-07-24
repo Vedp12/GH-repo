@@ -1,0 +1,3 @@
+markdown>=3.10
+requests>=2.34
+gitpython>=3.1

@@ -1,0 +1,4 @@
+from git import Repo
+repo_url = "https://github.com/your-username/your-repo.git"
+local_dir = "/path/to/save/repo"
+Repo.clone_from(repo_url, local_dir)  
