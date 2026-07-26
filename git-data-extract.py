@@ -1,4 +1,3 @@
-
 # * Modules
 import requests
 import markdown
@@ -105,13 +104,22 @@ else:
 
 if response_profile.status_code == 200 and response_repo.status_code == 200:
     try:
-        for repo in data_repos:
-            if not os.path.exists(f"github-{github_Uname}-{data_profile["id"]}/{repo["name"]}"):
-                os.mkdir(f"github-{github_Uname}-{data_profile["id"]}/{repo["name"]}")
-            all_repo = f"https://github.com/{github_Uname}/{repo["name"]}.git"
-            local_dir = (
-                f"github-{github_Uname}-{data_profile["id"]}/{repo["name"]}"
-            )
-            git.Repo.clone_from(all_repo, local_dir)
+        while True:
+
+            for repo in data_repos:
+                if not os.path.exists(
+                    f"github-{github_Uname}-{data_profile["id"]}/{repo["name"]}"
+                ):
+                    os.mkdir(
+                        f"github-{github_Uname}-{data_profile["id"]}/{repo["name"]}"
+                    )
+                    all_repo = f"https://github.com/{github_Uname}/{repo["name"]}.git"
+                    local_dir = (
+                        f"github-{github_Uname}-{data_profile["id"]}/{repo["name"]}"
+                    )
+                    git.Repo.clone_from(all_repo, local_dir)
+        else:
+            print("error")
+
     except Exception as e:
         print(str(e))
