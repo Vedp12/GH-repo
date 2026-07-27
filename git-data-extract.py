@@ -5,7 +5,7 @@ import base64
 import git
 import os
 
-# * Urls
+# * urls
 
 github_Uname = input("enter Profile name:")
 github_profile = f"https://api.github.com/users/{github_Uname}"
@@ -96,7 +96,7 @@ if response_repo.status_code == 200:
                     file_repo.write(
                         f"{profile_repo_Attribute} - {repo[profile_repo_Attribute]}\n"
                     )
-            print(f"{file_repo} created successfully! ")
+            print(f"{data_repos["name"]} created successfully! ")
     except Exception as e:
         print(str(e))
 else:

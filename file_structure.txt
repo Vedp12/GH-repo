@@ -1,0 +1,20 @@
+       |-- .venv       |-- README.md       |-- file_structure.txt       |-- requirement.txt       |-- .gitignore       |-- pyproject.toml       |-- uv.lock       |-- listing_patters.py       |-- clone_repo.txt       |-- git-data-extract.py       |-- OSFoldersList.py       |-- README.md       |-- file_structure.txt       |-- requirement.txt       |-- .gitignore       |-- pyproject.toml       |-- uv.lock       |-- listing_patters.py       |-- clone_repo.txt       |-- git-data-extract.py       |-- OSFoldersList.py       |-- README.md       |-- file_structure.txt       |-- requirement.txt       |-- .gitignore       |-- pyproject.toml       |-- uv.lock       |-- listing_patters.py       |-- clone_repo.txt       |-- git-data-extract.py       |-- OSFoldersList.py       |-- README.md       |-- file_structure.txt       |-- requirement.txt       |-- .gitignore       |-- pyproject.toml       |-- uv.lock       |-- listing_patters.py       |-- clone_repo.txt       |-- git-data-extract.py       |-- OSFoldersList.py       |-- README.md
+       |-- file_structure.txt
+       |-- requirement.txt
+       |-- .gitignore
+       |-- pyproject.toml
+       |-- uv.lock
+       |-- listing_patters.py
+       |-- clone_repo.txt
+       |-- git-data-extract.py
+       |-- OSFoldersList.py
+       |-- README.md       |-- file_structure.txt       |-- requirement.txt       |-- .gitignore       |-- pyproject.toml       |-- uv.lock       |-- listing_patters.py       |-- clone_repo.txt       |-- git-data-extract.py       |-- OSFoldersList.py       |-- README.md       |-- file_structure.txt       |-- requirement.txt       |-- .gitignore       |-- pyproject.toml       |-- uv.lock       |-- listing_patters.py       |-- clone_repo.txt       |-- git-data-extract.py       |-- OSFoldersList.py       |-- README.md       |-- file_structure.txt       |-- requirement.txt       |-- .gitignore       |-- pyproject.toml       |-- uv.lock       |-- listing_patters.py       |-- clone_repo.txt       |-- git-data-extract.py       |-- OSFoldersList.py       |-- README.md
+       |-- file_structure.txt
+       |-- requirement.txt
+       |-- .gitignore
+       |-- pyproject.toml
+       |-- uv.lock
+       |-- listing_patters.py
+       |-- clone_repo.txt
+       |-- git-data-extract.py
+       |-- OSFoldersList.py
