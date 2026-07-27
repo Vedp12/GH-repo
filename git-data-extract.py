@@ -1,9 +1,8 @@
 # * Modules
-import requests
-import markdown
-import base64
+import os  # noqa: I001
 import git
-import os
+import markdown
+import requests
 
 # * urls
 
@@ -49,7 +48,7 @@ if response_profile.status_code == 200:
                         f"{profile_name_Attribute} - {data_profile[profile_name_Attribute]} \n"
                     )
             print(f"{file_profile} data added successfull! ")
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001
         print(str(e))
 
     try:
@@ -60,7 +59,7 @@ if response_profile.status_code == 200:
                 profile_bio_str = markdown.markdown(f"""{data_profile["bio"]}""")
                 file_profile_bio.write("\n" + profile_bio_str)
             print(f"{file_profile_bio} created successfully! ")
-    except Exception as e:
+    except Exception as e: # noqa: BLE001
         print(str(e))
 
 else:
@@ -92,12 +91,9 @@ if response_repo.status_code == 200:
             for no, repo in enumerate(data_repos):
                 file_repo.write("-------------------------\n\n")
                 file_repo.write(f"Project {no+1}, {repo["name"]}")
-                for profile_repo_Attribute in profile_repo_Attributes:
-                    file_repo.write(
-                        f"{profile_repo_Attribute} - {repo[profile_repo_Attribute]}\n"
-                    )
+                file_repo.writelines(f"{profile_repo_Attribute} - {repo[profile_repo_Attribute]}\n" for profile_repo_Attribute in profile_repo_Attributes)
             print(f"{data_repos["name"]} created successfully! ")
-    except Exception as e:
+    except Exception as e: # noqa: BLE001
         print(str(e))
 else:
     print(f"Unable to get data {response_repo.status_code}")
@@ -118,8 +114,7 @@ if response_profile.status_code == 200 and response_repo.status_code == 200:
                         f"github-{github_Uname}-{data_profile["id"]}/{repo["name"]}"
                     )
                     git.Repo.clone_from(all_repo, local_dir)
-        else:
-            print("error")
+        print("error")
 
     except Exception as e:
         print(str(e))
